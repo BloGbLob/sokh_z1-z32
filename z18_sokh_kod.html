@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+  <head>
+    <title> proste obliczenia</title>
+    <meta charset="utf-8">
+    <style>
+      textarea {
+        color:rgb(102, 102, 102); 
+        font-size:15px; 
+        resize: none;
+        height: 90vh;
+        width: 90vw;
+      }
+    </style>
+  </head>
+  <body>
+<textarea readonly>
+  <!DOCTYPE html>
+<html>
+  <head>
+    <title> Użycie funkcji </title>
+    <meta charset="utf-8">
+  </head>
+
+  <body>
+    <div style="color:rgb(24, 24, 150);font-size:50px;">
+      <script>
+        let a = parseFloat(prompt("a=", ''));
+        let b = parseFloat(prompt("b=", ''));
+
+        function suma_sokh(a, b) {
+          return a + b;
+        }
+
+        function diff_sokh(a, b) {
+          return a - b;
+        }
+
+        function multi_sokh(a, b) {
+          return a * b;
+        }
+
+        function square_sokh(a, b) {
+          return `a^2 = ${a ** 2}, b^2 = ${b ** 2}`;
+        }
+
+        function remainder_sokh(a, b) {
+          return a % b;
+        }
+
+        document.write("suma=" + suma_sokh(a, b) + "<br>");
+        document.write("odejmowanie=" + diff_sokh(a, b) + "<br>");
+        document.write("mnożenie=" + multi_sokh(a, b) + "<br>");
+        document.write("do kwadratu=" + square_sokh(a, b) + "<br>");
+        document.write("reszta z dzielenia=" + remainder_sokh(a, b) + "<br>");
+      </script>
+    </div>
+  </body>
+</html>
+    </textarea>
+  </body>
+</html>
